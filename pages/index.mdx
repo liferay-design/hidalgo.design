@@ -1,0 +1,78 @@
+import { Box, Container, Heading, Text, Flex } from 'theme-ui'
+import Image from 'next/image'
+
+export default props => <Container as="main" py={6} {...props} />
+
+<Flex>
+  <Container variant="narrow" sx={{ ml: 0, my: 6, p: 0}} >
+    <Heading sx={{ variant: 'text.title', mb: 3 }}>
+      Experiences. <br /> Design. <br />{' '}
+      <Box as="span" sx={{ fontWeight: 900 }}>
+        Relationships
+      </Box>{' '}
+    </Heading>
+
+<Text sx={{}}>
+  A seasoned leader, adept at building and coaching teams, helping companies
+  achieve business outcomes{' '}
+  <Box as="span" sx={{ fontWeight: 'heading', color: 'primary' }}>
+    by design.
+  </Box>
+</Text>
+
+</Container>
+
+<Container variant="narrow" sx={{mr:0, position: 'relative', height: 900, width: 600, '&:after':{content:'""', backgroundColor: 'primary', height: '80%', width: '96%', position: 'absolute', bottom: -2, right: -2, zIndex: '-1',} }}> 
+  <Image
+        src="/images/sexy_juan.jpg"
+        alt="Picture of Juan and some of the Designers"
+        layout="fill"
+        objectFit="cover"
+      />
+</Container>
+</Flex>
+
+<Heading
+  sx={{
+    variant: 'text.title',
+    fontWeight: 900,
+    color: 'light',
+    position: 'absolute',
+    zIndex: -1,
+    opacity: 0.32,
+    mt: '-.56em',
+    ml: '-.32ch',
+  }}
+>
+  About
+</Heading>
+
+I recently joined the team at [Mews](https://mews.com), where I serve as the VP of Design. We’re designing the hospitality system of the future — [we’re hiring](https://www.mews.com/careers) so please don’t be shy, apply!
+
+Prior to that, I spent 9 years at [Liferay](https://liferay.design), where I started as one of the first designers. I built a number of design teams, growing them into departments, and then a division.
+
+Before that, historical records weren’t kept.
+
+<Heading
+  sx={{
+    variant: 'text.title',
+    fontWeight: 900,
+    color: 'light',
+    lineHeight: '1.05',
+  }}
+>
+  Copyright © 2022 Juan Hidalgo
+</Heading>
+
+<Heading
+  as="h2"
+  variant="display"
+  sx={{ fontWeight: 900, fontSize: 4, color: 'light' }}
+>
+  Credits
+</Heading>
+
+Headlines are set in [Almoneda](https://www.sudtipos.com/font/almoneda), a typeface
+designed by Ales Santos in Madrid.
+
+Body copy is set in [Quattrocento Sans](https://fonts.google.com/specimen/Quattrocento+Sans), a typeface designed by Pablo Impallari.

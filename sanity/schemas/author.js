@@ -26,8 +26,8 @@ export default {
       },
     },
     {
-      name: 'bio',
-      title: 'Bio',
+      name: 'message',
+      title: 'Message',
       type: 'array',
       of: [
         {
