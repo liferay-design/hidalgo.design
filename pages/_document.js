@@ -6,7 +6,11 @@ export default function Document() {
     <Html lang="en-US">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap"
           rel="stylesheet"
@@ -15,37 +19,37 @@ export default function Document() {
           rel="preload"
           href="/fonts/Almoneda/Almoneda-Bold.woff2"
           as="font"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Almoneda/Almoneda-Light.woff2"
           as="font"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Almoneda/Almoneda-Regular.woff2"
           as="font"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Almoneda/Almoneda-Bold.woff"
           as="font"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Almoneda/Almoneda-Light.woff"
           as="font"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Almoneda/Almoneda-Regular.woff"
           as="font"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         {/* thanks to https://kirazhang.com/posts/nextjs-custom-fonts for the how-to on this! */}
       </Head>
