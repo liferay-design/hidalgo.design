@@ -13,9 +13,39 @@ export default function Document() {
         />
         <link
           rel="preload"
-          href="/fonts/Almoneda/AlmonedaVariableVF.woff2"
+          href="/fonts/Almoneda/Almoneda-Bold.woff2"
           as="font"
-          crossOrigin=""
+          crossOrigin
+        />
+        <link
+          rel="preload"
+          href="/fonts/Almoneda/Almoneda-Light.woff2"
+          as="font"
+          crossOrigin
+        />
+        <link
+          rel="preload"
+          href="/fonts/Almoneda/Almoneda-Regular.woff2"
+          as="font"
+          crossOrigin
+        />
+        <link
+          rel="preload"
+          href="/fonts/Almoneda/Almoneda-Bold.woff"
+          as="font"
+          crossOrigin
+        />
+        <link
+          rel="preload"
+          href="/fonts/Almoneda/Almoneda-Light.woff"
+          as="font"
+          crossOrigin
+        />
+        <link
+          rel="preload"
+          href="/fonts/Almoneda/Almoneda-Regular.woff"
+          as="font"
+          crossOrigin
         />
         {/* thanks to https://kirazhang.com/posts/nextjs-custom-fonts for the how-to on this! */}
       </Head>
