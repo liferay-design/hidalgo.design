@@ -1,7 +1,17 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
-import { jsx, Container, Grid, Box, Heading, Link, Flex } from 'theme-ui'
+import {
+  jsx,
+  Container,
+  Text,
+  Grid,
+  Box,
+  Heading,
+  Link,
+  Flex,
+  Paragraph,
+} from 'theme-ui'
 import Image from 'next/image'
 
 const Footer = props => {
@@ -30,10 +40,13 @@ const Footer = props => {
           as="footer"
           sx={{ variant: 'layout.grids.footer', gridArea: 'footer' }}
         >
-          <Box>
+          <Box
+            sx={{
+              gridArea: 'copyright',
+            }}
+          >
             <Heading
               sx={{
-                gridArea: 'copyright',
                 variant: 'text.title',
                 fontWeight: 700,
                 color: 'light',
@@ -51,21 +64,35 @@ const Footer = props => {
               Credits
             </Heading>
 
-            <Flex sx={{ gap: 80 }}>
+            <Flex sx={{ gap: 80, mt: 1 }}>
               <Box>
-                Headlines are set in
-                [Almoneda](https://www.sudtipos.com/font/almoneda), a typeface
-                designed by Ales Santos in&nbsp;Madrid. Body copy is set in
-                [Quattrocento
-                Sans](https://fonts.google.com/specimen/Quattrocento+Sans), a
-                typeface designed by Pablo Impallari.
+                <Paragraph>
+                  Headlines are set in{' '}
+                  <Link href="https://www.sudtipos.com/font/almoneda">
+                    Almoneda
+                  </Link>
+                  , a typeface designed by Ales Santos in&nbsp;Madrid.
+                </Paragraph>
+                <Paragraph>
+                  Body copy is set in{' '}
+                  <Link href="https://fonts.google.com/specimen/Quattrocento+Sans">
+                    Quattrocento Sans
+                  </Link>
+                  , a typeface designed by Pablo Impallari.
+                </Paragraph>
               </Box>
 
               <Box>
-                The site is powered by [Next.js](https://nextjs.org/), styled
-                using [Theme UI](https://theme-ui.com/), and hosted on
-                [Vercel](https://vercel.app/). Domain registered with
-                [porkbun.com](https://porkbun.com/).
+                <Paragraph>
+                  The site is powered by{' '}
+                  <Link href="https://nextjs.org/">Next.js</Link>, styled using{' '}
+                  <Link href="https://theme-ui.com">Theme UI</Link>, and hosted
+                  on <Link href="https://vercel.app/">Vercel</Link>.
+                </Paragraph>
+                <Paragraph>
+                  Domain registered with{' '}
+                  <Link href="https://porkbun.com/">porkbun.com</Link>.
+                </Paragraph>
               </Box>
             </Flex>
           </Box>
