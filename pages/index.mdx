@@ -1,13 +1,14 @@
-import { Box, Container, Heading, Text, Flex } from 'theme-ui'
+import { Box, Container, Grid, Heading, Text, Flex, Link } from 'theme-ui'
 import Image from 'next/image'
 
-export default props => <Container as="main" py={6} {...props} />
+export default props => <Container as="main" py={[2, 6]} {...props} />
 
-<Flex>
-  <Container variant="narrow" sx={{ ml: 0, my: 6, p: 0}} >
+<Grid sx={{variant:'layout.grids.homepage'}}>
+
+<Box sx={{gridArea:'hero-content'}}>
     <Heading sx={{ variant: 'text.title', mb: 3 }}>
       Experiences. <br /> Design. <br />{' '}
-      <Box as="span" sx={{ fontWeight: 900 }}>
+      <Box as="span" sx={{ fontWeight: 700 }}>
         Relationships
       </Box>{' '}
     </Heading>
@@ -20,18 +21,37 @@ export default props => <Container as="main" py={6} {...props} />
   </Box>
 </Text>
 
-</Container>
+</Box>
 
-<Container variant="narrow" sx={{mr:0, position: 'relative', height: 900, width: 600, '&:after':{content:'""', backgroundColor: 'primary', height: '80%', width: '96%', position: 'absolute', bottom: -2, right: -2, zIndex: '-1',} }}> 
+<Box
+  sx={{
+    gridArea: 'hero-image',
+    position: 'relative',
+    height: ['60vh', 900],
+    width: ['100%', 600],
+    mt: [0, -6],
+    '&:after': {
+      content: '""',
+      backgroundColor: 'primary',
+      height: '80%',
+      width: '96%',
+      position: 'absolute',
+      bottom: -2,
+      right: -2,
+      zIndex: '-1',
+    },
+  }}
+>
   <Image
-        src="/images/sexy_juan.jpg"
-        alt="Picture of Juan and some of the Designers"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center bottom"
-      />
-</Container>
-</Flex>
+    src="/images/sexy_juan.jpg"
+    alt="Picture of Juan and some of the Designers"
+    layout="fill"
+    objectFit="cover"
+    objectPosition="center bottom"
+  />
+</Box>
+
+<Box sx={{gridArea:'about-main'}}>
 
 <Heading
   sx={{
@@ -48,32 +68,20 @@ export default props => <Container as="main" py={6} {...props} />
   About
 </Heading>
 
-I recently joined the team at [Mews](https://mews.com), where I serve as the VP of Design. We’re designing the hospitality system of the future — [we’re hiring](https://www.mews.com/careers) so please don’t be shy, apply!
+<Text>
+
+**I recently joined the team at [Mews](https://mews.com), where I serve as the VP of Design. We’re designing the hospitality system of the future — [we’re hiring](https://www.mews.com/careers) so please don’t be shy, apply!**
+
+</Text>
+
+</Box>
+
+<Text sx={{ gridArea:'about-sub', mt:[-160, 'initial']}}>
 
 Prior to that, I spent 9 years at [Liferay](https://liferay.design), where I started as one of the first designers. I built a number of design teams, growing them into departments, and then a division.
 
 Before that, historical records weren’t kept.
 
-<Heading
-  sx={{
-    variant: 'text.title',
-    fontWeight: 700,
-    color: 'light',
-    lineHeight: '1.05',
-  }}
->
-  Copyright © 2022 Juan Hidalgo
-</Heading>
+</Text>
 
-<Heading
-  as="h2"
-  variant="display"
-  sx={{ fontWeight: 700, fontSize: 4, color: 'light' }}
->
-  Credits
-</Heading>
-
-Headlines are set in [Almoneda](https://www.sudtipos.com/font/almoneda), a typeface
-designed by Ales Santos in Madrid.
-
-Body copy is set in [Quattrocento Sans](https://fonts.google.com/specimen/Quattrocento+Sans), a typeface designed by Pablo Impallari.
+</Grid>

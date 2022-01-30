@@ -4,6 +4,7 @@ import Meta from '../components/meta'
 import theme from '../lib/theme'
 import { ThemeProvider } from 'theme-ui'
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -11,6 +12,7 @@ const App = ({ Component, pageProps }) => {
       <Meta />
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   )
 }
