@@ -18,26 +18,7 @@ import Image from 'next/image'
 const Footer = props => {
   return (
     <Box>
-      <Parallax speed={10} translateY={[-200, 10]}>
-        <Box
-          sx={{
-            right: ['-2%', 0],
-            bottom: ['-196vh', '-30vh'],
-            position: 'absolute',
-            height: ['30vh', 600],
-            width: ['50%', 400],
-          }}
-        >
-          <Image
-            src="/images/juan-transparent-opt.png"
-            alt="Picture of Juan looking at something"
-            layout="fill"
-            objectFit="contain"
-            objectPosition="center bottom"
-          />
-        </Box>
-      </Parallax>
-      <Container sx={{ mb: [4, 7] }}>
+      <Container sx={{ mb: [-8, -7] }}>
         <Grid
           as="footer"
           sx={{ variant: 'layout.grids.footer', gridArea: 'footer' }}
@@ -73,14 +54,14 @@ const Footer = props => {
                   <Link href="https://www.sudtipos.com/font/almoneda">
                     Almoneda
                   </Link>
-                  , a typeface designed by Ales Santos in&nbsp;Madrid.
+                  , a&nbsp;typeface designed by Ales Santos in&nbsp;Madrid.
                 </Paragraph>
                 <Paragraph>
                   Body copy is set in{' '}
                   <Link href="https://fonts.google.com/specimen/Quattrocento+Sans">
                     Quattrocento Sans
                   </Link>
-                  , a typeface designed by Pablo Impallari.
+                  , a&nbsp;typeface designed by Pablo Impallari.
                 </Paragraph>
               </Box>
 
@@ -130,6 +111,26 @@ const Footer = props => {
           </Box>
         </Grid>
       </Container>
+      <Parallax translateY={[-20, 30]}>
+        <Box
+          sx={{
+            right: ['-2%', 0],
+            ml: 'auto',
+            bottom: [-4, '40vh'],
+            position: 'relative',
+            height: ['30vh', 600],
+            width: ['50%', 400],
+          }}
+        >
+          <Image
+            src="/images/juan-transparent-opt.png"
+            alt="Picture of Juan looking at something"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="center bottom"
+          />
+        </Box>
+      </Parallax>
     </Box>
   )
 }
