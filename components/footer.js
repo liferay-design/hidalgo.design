@@ -17,27 +17,27 @@ import Image from 'next/image'
 
 const Footer = props => {
   return (
-    <Box sx={{ position: 'relative' }}>
-      <Parallax speed={10} translateY={[-2000, -100]}>
+    <Box>
+      <Parallax speed={10} translateY={[-200, 10]}>
         <Box
           sx={{
-            right: ['-27%', 0],
-            bottom: ['65%', '20%'],
+            right: ['-2%', 0],
+            bottom: ['-196vh', '-30vh'],
             position: 'absolute',
-            height: ['50vw', 600],
-            width: ['100%', 400],
+            height: ['30vh', 600],
+            width: ['50%', 400],
           }}
         >
           <Image
-            src="/images/juan-up-transparent.png"
-            alt="Picture of Juan and some of the Designers"
+            src="/images/juan-transparent-opt.png"
+            alt="Picture of Juan looking at something"
             layout="fill"
             objectFit="contain"
             objectPosition="center bottom"
           />
         </Box>
       </Parallax>
-      <Container sx={{ mb: 8 }}>
+      <Container sx={{ mb: [4, 7] }}>
         <Grid
           as="footer"
           sx={{ variant: 'layout.grids.footer', gridArea: 'footer' }}
@@ -54,7 +54,7 @@ const Footer = props => {
                 color: 'light',
                 lineHeight: '1.05',
                 fontSize: ['32vw', 7],
-                mb: 6,
+                mb: [6, 0],
               }}
             >
               Copy&#8203;right © 2022 <br /> Juan &#8203;Hidalgo
@@ -66,7 +66,7 @@ const Footer = props => {
               Credits
             </Heading>
 
-            <Flex sx={{ gap: [4, 40], mt: 1 }}>
+            <Flex sx={{ gap: [4, 40], mt: 1, flexWrap: ['wrap', 'nowrap'] }}>
               <Box>
                 <Paragraph>
                   Headlines are set in{' '}
@@ -99,7 +99,7 @@ const Footer = props => {
             </Flex>
           </Box>
 
-          <Box id="contact" sx={{ gridArea: 'contact' }}>
+          <Box id="contact" sx={{ gridArea: 'contact', mt: [6, 0] }}>
             <Heading as="h2" variant="smallHeadingLight" sx={{ mb: 3 }}>
               Contact
             </Heading>

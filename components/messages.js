@@ -12,13 +12,11 @@ const Messages = ({ gridArea }) => {
         ...gridArea,
         flexDirection: ['column', 'row'],
         backgroundColor: 'white',
-        ml: -5,
-        mr: -3,
-        pl: 5,
-        pr: 1,
+        mx: -5,
+        px: 5,
         pt: 5,
         pb: 6,
-        width: ['124%', '160%'],
+        width: ['initial', '160%'],
         position: 'relative',
       }}
     >
@@ -35,7 +33,11 @@ const Messages = ({ gridArea }) => {
         <Paragraph variant="paragraph.large">
           We wrote you some farewell messages.
         </Paragraph>
-        <Button as="a" href="/aufweidersein">
+        <Button
+          as="a"
+          href="/aufweidersein"
+          sx={{ width: ['100%', 'initial'], mt: 4 }}
+        >
           Read Messages
         </Button>
       </Box>
@@ -47,7 +49,7 @@ const Messages = ({ gridArea }) => {
           height: [100, 200],
           width: [110, 220],
           position: ['absolute', 'relative'],
-          right: [0, 'initial'],
+          right: [4, 'initial'],
         }}
       >
         <Image
