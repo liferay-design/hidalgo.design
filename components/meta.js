@@ -8,7 +8,7 @@ const Meta = ({
   title = 'Juan Hidalgo | Passionate Design Leader, currently VP of Design at Mews', // page title
   name = 'Hidalgo.Design', // site name
   description = 'This website was made with love by Liferay.Design', // page description
-  image = '', // social card image URL
+  image = '/hidalgo-dot-design-og.png', // social card image URL
   url = 'https://hidalgo.design',
   children,
 }) => (
