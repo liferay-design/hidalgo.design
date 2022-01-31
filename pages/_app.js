@@ -5,6 +5,7 @@ import theme from '../lib/theme'
 import { ThemeProvider } from 'theme-ui'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import '../lib/global.css'
 
 const App = ({ Component, pageProps }) => {
   return (

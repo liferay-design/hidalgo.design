@@ -1,9 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
-import { jsx, Container, Flex } from 'theme-ui'
+import { jsx, Container, Flex, Button } from 'theme-ui'
 import ColorSwitcher from './color-switcher'
-import Twitter from './twitter'
 import Logo from './logo'
 
 const Navbar = props => {
@@ -12,7 +11,7 @@ const Navbar = props => {
       <Flex as="nav">
         <Logo sx={{ color: 'text' }} />
         <div sx={{ mx: 'auto' }} />
-        <Twitter sx={{ color: 'text' }} />
+        <Button href="#contact">Contact</Button>
         <ColorSwitcher />
       </Flex>
     </Container>

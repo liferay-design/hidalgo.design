@@ -97,7 +97,7 @@ const Footer = props => {
             </Flex>
           </Box>
 
-          <Box sx={{ gridArea: 'contact' }}>
+          <Box id="contact" sx={{ gridArea: 'contact' }}>
             <Heading as="h2" variant="smallHeadingLight">
               Contact
             </Heading>
