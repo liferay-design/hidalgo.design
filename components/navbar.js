@@ -7,11 +7,11 @@ import Logo from './logo'
 
 const Navbar = props => {
   return (
-    <Container sx={{ py: 3 }}>
-      <Flex as="nav">
+    <Container sx={{ py: 3, my: 2, }}>
+      <Flex as="nav" sx={{alignItems: 'center'}}>
         <Logo sx={{ color: 'text' }} />
         <div sx={{ mx: 'auto' }} />
-        <Button as="a" href="#contact">Contact</Button>
+        <Button variant="outline" sx={{mx: 4}} as="a" href="#contact">Contact</Button>
         <ColorSwitcher />
       </Flex>
     </Container>
