@@ -1,95 +1,99 @@
-## Chris Jeong
+import { Box, Container, Grid, Heading, Text, Flex, Link } from 'theme-ui'
 
-Juan I was just starting to understand you through your Kentucky-Spanish accent! And now, sadly, that oddly specific skill will be gathering dust until our paths cross again. Joking aside, thanks for everything man. You always knew just the right thing to ask to activate and unlock hidden potential in myself. Your leadership style taught me to recognize and seize opportunity. I will always appreciate you for that and hope to take that with me throughout my career. I’m sad that you will no longer be with us at Liferay, but wish you and your family the very best that life can offer. Please don’t hesitate to reach out to me for anything professional or personal. Don’t be a stranger, SIR!
+export default props => <Container as="main" py={[2, 6]} {...props} />
 
-## Daniela de la Garza
+<Box sx={{ maxWidth: '48ch', my: 6,}}>
+    <Heading sx={{ variant: 'text.title', mb: 3 }}>
+      Hey{' '}
+      <Box as="span" sx={{ fontWeight: 700 }}>
+        Juan!
+      </Box>
+    </Heading>
 
-Joining the Design team has been an incredible experience. Something that I noticed immediately is the openness and support people from every management level show. Thank you for creating a thriving team! I wish you all the best for this next chapter, and just know all the hard work put into Liferay has truly made a difference.
+<Text sx={{}}>
+  Even though we can't say goodbye in person — we want to send you off with our best wishes!
+</Text>
 
-## Bruno Lacerda
+</Box>
 
-Juan, we didn’t have the opportunity to interact due to the short time since I joined Liferay, but when I see the way people are engaged and how they look happy and motivated doing their jobs, I can tell you were an excellent leader to everyone.
+<Grid sx={{gridTemplateColumns: ['1fr', '1fr 1fr'], gap: [80, 160], py: 6,}}>
 
-These choices and big steps that we do mean that we’re growing and getting better, right? So I wish you to be happy every step of the way!
 
-## Leonardo Lohmann
+> Juan I was just starting to understand you through your Kentucky-Spanish accent! And now, sadly, that oddly specific skill will be gathering dust until our paths cross again. Joking aside, thanks for everything man. You always knew just the right thing to ask to activate and unlock hidden potential in myself. Your leadership style taught me to recognize and seize opportunity. I will always appreciate you for that and hope to take that with me throughout my career. I’m sad that you will no longer be with us at Liferay, but wish you and your family the very best that life can offer. Please don’t hesitate to reach out to me for anything professional or personal. Don’t be a stranger, SIR!
+<cite><span>Chris</span> Jeong</cite>
 
-Juan, as I told before, your farewell message really caught me by surprise! When I joined Liferay I felt a warm welcome and was excited being part of this incredible and talented team. Unfortunately, I had less interaction with you than I would have wished. Nevertheless, I want you to know that I was very inspired by your leadership and by the department’s culture (and structure). Not every design org has the chance to have a VP like you. It is sad to see you leave but I wish you all the best in your new path and all the joy in your life. Thank you for this unique opportunity. Thank you, Sir, for all the work you leave behind in our department. May your legacy be our guiding light for the road ahead!
+> Joining the Design team has been an incredible experience. Something that I noticed immediately is the openness and support people from every management level show. Thank you for creating a thriving team! I wish you all the best for this next chapter, and just know all the hard work put into Liferay has truly made a difference.
+<cite><span>Daniela</span> de&nbsp;la&nbsp;Garza</cite>
 
-## Juan Baker
+> Juan, we didn’t have the opportunity to interact due to the short time since I joined Liferay, but when I see the way people are engaged and how they look happy and motivated doing their jobs, I can tell you were an excellent leader to everyone.
+>
+> These choices and big steps that we do mean that we’re growing and getting better, right? So I wish you to be happy every step of the way!
+<cite><span>Bruno</span> Lacerda</cite>
 
-I have just joined the Liferay family. I would have liked to collaborate with you, but I am sure that life can take many turns and we will probably work together later. In the meantime, I wish you good luck.
+> Juan, as I told before, your farewell message really caught me by surprise! When I joined Liferay I felt a warm welcome and was excited being part of this incredible and talented team. Unfortunately, I had less interaction with you than I would have wished. Nevertheless, I want you to know that I was very inspired by your leadership and by the department’s culture (and structure). Not every design org has the chance to have a VP like you. It is sad to see you leave but I wish you all the best in your new path and all the joy in your life. Thank you for this unique opportunity. Thank you, Sir, for all the work you leave behind in our department. May your legacy be our guiding light for the road ahead!
+<cite><span>Leonardo</span> Lohmann</cite>
 
-Thank you for growing this team!
+> I have just joined the Liferay family. I would have liked to collaborate with you, but I am sure that life can take many turns and we will probably work together later. In the meantime, I wish you good luck.
+>
+> Thank you for growing this team!
+<cite><span>Juan</span> Baker</cite>
 
-## Carolina Hurtado
+> I join Liferay ending 2021, as a Product Designer. I can share that I feel a warm welcome, a supportive team, a great vibe that encourages me to grow as a professional and in this awesome community I think I must thank you Juan, for creating this awesome place to work, thank you for your influence, and you inspire me. /Mis mejores deseos para ti/ I wish you luck with your new position. Cheers
+<cite><span>Carolina</span> Hurtado</cite>
 
-I join Liferay ending 2021, as a Product Designer. I can share that I feel a warm welcome, a supportive team, a great vibe that encourages me to grow as a professional and in this awesome community I think I must thank you Juan, for creating this awesome place to work, thank you for your influence, and you inspire me. /Mis mejores deseos para ti/ I wish you luck with your new position. Cheers
+> Not in my wildest dreams could I have imagined what would happen as a result of introducing myself to an abnormally large Spaniard who seemed a little out of place. Little did I know, it would completely change, not only the course of my career, but my life as well. 
+>
+>Professionally, you taught me so much — I’m not sure I will ever reach the level of confidence you have in me — regardless, I’m so thankful for all you have taught me. Personally — it’s hard to find a better friend than you, and I’m glad that even though our professional paths are diverging, our friendship will continue to grow.
+<cite><span>Paul</span> Hanaoka</cite>
 
-## Paul Hanaoka
+> Juan, thanks for always believing in me. From wanting to invest in me through UX and research to supporting me in the things I wanted to do and learn, even though I don’t think I always made the best decisions for myself. I know you have a huge heart for design and a vision for what it could look like at Liferay and to achieve that vision, you had to make tough changes at times. I hope you can take all that you’ve gained from Liferay into your next adventure and help others grow. Aside from work things, my favorite parts have always been the non-work things. I’ll never forget getting blocked by you. I’ll never forget getting to coach your boys. I’ll never forget when you’d ask me about my health or talking about “Brook Lopez’s mother.” I hope you’ll always be able to be personable and that all the other things will be secondary. Blessings in your next journey.
+<cite><span>Naoki</span> Hisamoto</cite>
 
-Not in my wildest dreams could I have imagined what would happen as a result of introducing myself to an abnormally large Spaniard who seemed a little out of place. Little did I know, it would completely change, not only the course of my career, but my life as well. Professionally, you taught me so much — I’m not sure I will ever reach the level of confidence you have in me — regardless, I’m so thankful for all you have taught me. Personally — it’s hard to find a better friend than you, and I’m glad that even though our professional paths are diverging, our friendship will continue to grow.
+> Juan, it is very sad to see you leave… I was really excited to have you move to Germany and be part of the German liferay team. Sadly due to the circumstances we only had the chance to meet once in the office. I really appreciate your holistic design view and your great expertise in so many areas. I wish you all the best for your upcoming journey and great blessings to you and your family.
+<cite><span>Markus</span> Hammer</cite>
 
-## Naoki Hisamoto
+> Hi Juan! Goodbyes are always sad, but I would like to keep in the heart all the good you leave behind. Thanks for the amazing Design Team you had built here in Liferay, full of very talented people and great human beings. Thanks for your vision, your direction and for every advice you gave us, in order to make us better designers. “Change is the only constant in life”, and you are brave to face it with pride. Wish you all the best in this new direction. Big Hug from Madrid!
+<cite><span>Marleny</span> Francisco</cite>
 
-Juan, thanks for always believing in me. From wanting to invest in me through UX and research to supporting me in the things I wanted to do and learn, even though I don’t think I always made the best decisions for myself. I know you have a huge heart for design and a vision for what it could look like at Liferay and to achieve that vision, you had to make tough changes at times. I hope you can take all that you’ve gained from Liferay into your next adventure and help others grow. Aside from work things, my favorite parts have always been the non-work things. I’ll never forget getting blocked by you. I’ll never forget getting to coach your boys. I’ll never forget when you’d ask me about my health or talking about “Brook Lopez’s mother.” I hope you’ll always be able to be personable and that all the other things will be secondary. Blessings in your next journey.
+> Are you leaving?
+>
+> I can’t list the numerous things I’ve learned at work from you. Thanks to all your strategic thinking, how you teached us to build a good team with a high impact. Everything changed here with you. On the personal side… thanks for all the weekly meetings, 5 years in the long distance, but feeling I have you in the seat next to me. Thanks for taking me to all kinds of restaurants in LA, in my mind will always be the Ramen near the office, Lucille’s, the lobster, and the canadian-indian restaurants. You made this entire experience incredible. Thanks amigo!
+<cite><span>Víctor</span> Valle</cite>
 
-## Markus Hammer
+> Hi Juan, it is very sad to see you leaving. Whenever I have had the pleasure to speak with you in person it has always been a special moment, thank you for believing in me and for making me feel at home from day one, good luck and I wish you the best for the future.
+<cite><span>Andrea</span> Censi</cite>
 
-Juan, it is very sad to see you leave… I was really excited to have you move to Germany and be part of the German liferay team. Sadly due to the circumstances we only had the chance to meet once in the office. I really appreciate your holistic design view and your great expertise in so many areas. I wish you all the best for your upcoming journey and great blessings to you and your family.
+> I can only thank you for so much. Thank you for the opportunity to enter Liferay and be part of this family of designers that you have created. Thank you for your trust and for everything I have been able to learn from you. You have been a key player in this first stage of my career and I will always be grateful to you for that.
+>
+> Best wishes for your next adventure!
+<cite><span>Miriam</span> Manso</cite>
 
-## Marleny Francisco
+> It would have been nice to have spent more time with you to learn and experience first-hand all those beautiful things that everyone says about you. Anyhow, I am honored to be a part of the legacy you leave here. Thank you and best wishes!
+<cite><span>María</span> Arce</cite>
 
-Hi Juan! Goodbyes are always sad, but I would like to keep in the heart all the good you leave behind. Thanks for the amazing Design Team you had built here in Liferay, full of very talented people and great human beings. Thanks for your vision, your direction and for every advice you gave us, in order to make us better designers. “Change is the only constant in life”, and you are brave to face it with pride. Wish you all the best in this new direction. Big Hug from Madrid!
+> Hey Juan, It's hard for me to say goodbye so I'm here to thank you for everything you've done to improve this department. I wish you good luck and all the best on your new journey.
+<cite><span>Victor</span> Santos</cite>
 
-## Víctor Valle
+> I just want to say thank you for this opportunity to work with you and this amazing team. We build a department in a company for developers ruled by developers. It’s a big achievement! Besides, I don’t want to miss the opportunity to thank you and your wife again for your hospitality on my last travel to LA, stay out of home was hard for me, so sharing a meal and spending time with your family was very precious. I’ll never forget that. I wish you all the best Juan.
+<cite><span>David</span> Aragonés</cite>
 
-Are you leaving?
+> Hey Juan, c´mon! No me jodas! ;P
+>
+> You leave a BIG hole in the team and it’s going to be very hard to replace you. I’m very grateful for everything you taught me during this short–but very enriching– time. You’ve been such a great leader: caring, humane, always there to give the perfect advice. Thanks for your leadership. It’s been amazing to coincide with you in time and space. I hope our paths cross again in the near future. I wish you all the best always. Please keep in touch! mer
+<cite><span>Mercedes</span> Oseguera</cite>
 
-I can’t list the numerous things I’ve learned at work from you. Thanks to all your strategic thinking, how you teached us to build a good team with a high impact. Everything changed here with you. On the personal side… thanks for all the weekly meetings, 5 years in the long distance, but feeling I have you in the seat next to me. Thanks for taking me to all kinds of restaurants in LA, in my mind will always be the Ramen near the office, Lucille’s, the lobster, and the canadian-indian restaurants. You made this entire experience incredible. Thanks amigo!
+> Hey Juan, I would like first of all to thank you for everything you have done for the design team and all your influence on our processes and day-to-day. I wish you all the best and for the future of your career, we will miss you very much, but I know it's for a bigger reason and because of that. I hope one day I can meet you in person to talk a little, it's always a pleasure. Thank you Juan :)
+<cite><span>Arthur</span> Coninck</cite>
 
-## Andrea Censi
+> Hey Juan, I did not have the opportunity to share a time with you. But I know that you are a great guy. It is only needed to read the other messages to know it. I wish you the best in your next adventure, and hope to be able to meet you soon :) Cheers!
+<cite><span>Uge</span> Ortiz</cite>
 
-Hi Juan, it is very sad to see you leaving. Whenever I have had the pleasure to speak with you in person it has always been a special moment, thank you for believing in me and for making me feel at home from day one, good luck and I wish you the best for the future.
+> It’s really sad to see you leaving after building this incredible group of designers. It's been 5 years since I’ve joined and the way we work now is totally incomparable to how we’ve started. You did a great job helping us improve, grow and keep all our positive things along the road.
+>
+> You know I’ll always be grateful for trusting me inside this team, you had a huge impact in the way I am today (as a designer and as a person). I wish you all the best sir, you deserve it!
+<cite><span>Emiliano</span> Cicero</cite>
 
-## Miriam Manso
+> When I received the offer to join Liferay I was so thrilled because when I met you and the team at the Figma event, I knew I would learn a lot from the passionate and talented designers you’ve assembled. Being a part of Liferay Design is an experience I will always treasure as I have grown and learned so much more than I imagined thanks to your leadership and what you’ve built over the years. Most importantly, you’ve established a culture for each designer to be appreciated and cared for, which many organizations can only dream about. Thank you for each word of wisdom over the years. I hope I can be as inspirational and empowering to those around me as you have been for me. Looking forward to our next catch up together!
+<cite><span>Jon</span> Wood</cite>
 
-I can only thank you for so much. Thank you for the opportunity to enter Liferay and be part of this family of designers that you have created. Thank you for your trust and for everything I have been able to learn from you. You have been a key player in this first stage of my career and I will always be grateful to you for that.
-
-Best wishes for your next adventure!
-
-## María Arce
-
-It would have been nice to have spent more time with you to learn and experience first-hand all those beautiful things that everyone says about you. Anyhow, I am honored to be a part of the legacy you leave here. Thank you and best wishes!
-
-## Victor Santos
-
-Hey Juan, It's hard for me to say goodbye so I'm here to thank you for everything you've done to improve this department. I wish you good luck and all the best on your new journey.
-
-## David Aragonés
-
-I just want to say thank you for this opportunity to work with you and this amazing team. We build a department in a company for developers ruled by developers. It’s a big achievement! Besides, I don’t want to miss the opportunity to thank you and your wife again for your hospitality on my last travel to LA, stay out of home was hard for me, so sharing a meal and spending time with your family was very precious. I’ll never forget that. I wish you all the best Juan.
-
-## Mercedes Oseguera
-
-Hey Juan, c´mon! No me jodas! ;P
-
-You leave a BIG hole in the team and it’s going to be very hard to replace you. I’m very grateful for everything you taught me during this short–but very enriching– time. You’ve been such a great leader: caring, humane, always there to give the perfect advice. Thanks for your leadership. It’s been amazing to coincide with you in time and space. I hope our paths cross again in the near future. I wish you all the best always. Please keep in touch! mer
-
-## Arthur Coninck
-
-Hey Juan, I would like first of all to thank you for everything you have done for the design team and all your influence on our processes and day-to-day. I wish you all the best and for the future of your career, we will miss you very much, but I know it's for a bigger reason and because of that. I hope one day I can meet you in person to talk a little, it's always a pleasure. Thank you Juan :)
-
-## Uge Ortiz
-
-Hey Juan, I did not have the opportunity to share a time with you. But I know that you are a great guy. It is only needed to read the other messages to know it. I wish you the best in your next adventure, and hope to be able to meet you soon :) Cheers!
-
-## Emiliano Cicero
-
-It’s really sad to see you leaving after building this incredible group of designers. It's been 5 years since I’ve joined and the way we work now is totally incomparable to how we’ve started. You did a great job helping us improve, grow and keep all our positive things along the road.
-
-You know I’ll always be grateful for trusting me inside this team, you had a huge impact in the way I am today (as a designer and as a person). I wish you all the best sir, you deserve it!
-
-## Jon Wood
-
-When I received the offer to join Liferay I was so thrilled because when I met you and the team at the Figma event, I knew I would learn a lot from the passionate and talented designers you’ve assembled. Being a part of Liferay Design is an experience I will always treasure as I have grown and learned so much more than I imagined thanks to your leadership and what you’ve built over the years. Most importantly, you’ve established a culture for each designer to be appreciated and cared for, which many organizations can only dream about. Thank you for each word of wisdom over the years. I hope I can be as inspirational and empowering to those around me as you have been for me. Looking forward to our next catch up together!
+</Grid>
