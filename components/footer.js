@@ -1,6 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
+import { Parallax } from 'react-scroll-parallax';
 import {
   jsx,
   Container,
@@ -17,24 +18,25 @@ import Image from 'next/image'
 const Footer = props => {
   return (
     <Box sx={{ position: 'relative' }}>
-      <Box
-        sx={{
-          right: ['-27%', 0],
-          bottom: ['65%', '50%'],
-          transform: 'rotate(270deg)',
-          position: 'absolute',
-          height: ['50vw', 600],
-          width: ['100%', 600],
-        }}
-      >
-        <Image
-          src="/images/juan-up-transparent.png"
-          alt="Picture of Juan and some of the Designers"
-          layout="fill"
-          objectFit="contain"
-          objectPosition="center bottom"
-        />
-      </Box>
+      <Parallax speed={-10}>
+        <Box
+          sx={{
+            right: ['-27%', 0],
+            bottom: ['65%', '20%'],
+            position: 'absolute',
+            height: ['50vw', 600],
+            width: ['100%', 400],
+          }}
+        >
+          <Image
+            src="/images/juan-up-transparent.png"
+            alt="Picture of Juan and some of the Designers"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="center bottom"
+          />
+        </Box>
+      </Parallax>
       <Container sx={{ mb: 8 }}>
         <Grid
           as="footer"
