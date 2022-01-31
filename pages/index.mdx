@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Heading, Text, Flex, Link } from 'theme-ui'
+import Messages from '../components/messages.js'
 import Image from 'next/image'
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax'
 
 export default props => <Container as="main" py={[2, 6]} {...props} />
 
@@ -25,33 +26,33 @@ export default props => <Container as="main" py={[2, 6]} {...props} />
 </Box>
 
 <Parallax translateY={[-20, 10]}>
-<Box
-  sx={{
-    gridArea: 'hero-image',
-    position: 'relative',
-    height: ['60vh', 900],
-    width: ['100%', 600],
-    mt: [0, -6],
-    '&:after': {
-      content: '""',
-      backgroundColor: 'primary',
-      height: '80%',
-      width: '96%',
-      position: 'absolute',
-      bottom: -2,
-      right: -2,
-      zIndex: '-1',
-    },
-  }}
->
-  <Image
-    src="/images/sexy_juan.jpg"
-    alt="Picture of Juan and some of the Designers"
-    layout="fill"
-    objectFit="cover"
-    objectPosition="center bottom"
-  />
-</Box>
+  <Box
+    sx={{
+      gridArea: 'hero-image',
+      position: 'relative',
+      height: ['60vh', 900],
+      width: ['100%', 600],
+      mt: [0, -6],
+      '&:after': {
+        content: '""',
+        backgroundColor: 'primary',
+        height: '80%',
+        width: '96%',
+        position: 'absolute',
+        bottom: -2,
+        right: -2,
+        zIndex: '-1',
+      },
+    }}
+  >
+    <Image
+      src="/images/sexy_juan.jpg"
+      alt="Picture of Juan and some of the Designers"
+      layout="fill"
+      objectFit="cover"
+      objectPosition="center bottom"
+    />
+  </Box>
 </Parallax>
 
 <Box sx={{gridArea:'about-main'}}>
@@ -86,5 +87,7 @@ Prior to that, I spent 9 years at [Liferay](https://liferay.design), where I sta
 Before that, historical records weren’t kept.
 
 </Text>
+
+<Messages gridArea={{ gridArea: 'messages' }} />
 
 </Grid>

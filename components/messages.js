@@ -1,22 +1,50 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
-import { jsx, Container, Flex } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
-import Twitter from './twitter'
-import Logo from './logo'
+import { jsx, Flex, Heading, Paragraph, Box, Button } from 'theme-ui'
+import Image from 'next/image'
 
-const Navbar = props => {
+const Messages = ({ gridArea }) => {
   return (
-    <Container sx={{ py: 3 }}>
-      <Flex as="nav">
-        <Logo sx={{ color: 'text' }} />
-        <div sx={{ mx: 'auto' }} />
-        <Twitter sx={{ color: 'text' }} />
-        <ColorSwitcher />
-      </Flex>
-    </Container>
+    <Flex
+      as="section"
+      sx={{
+        ...gridArea,
+        backgroundColor: 'white',
+        ml: -5,
+        // mr: -3,
+        pl: 5,
+        pr: 1,
+        pt: 5,
+        pb: 6,
+        width: '160%',
+      }}
+    >
+      <Box>
+        <Heading variant="smallHeadingSecondary" sx={{ fontSize: 5, mb: 4 }}>
+          Sir, you’ve got some messages
+        </Heading>
+        <Paragraph variant="paragraph.large">
+          This site was a parting gift from the team at Liferay.Design.
+        </Paragraph>
+        <Paragraph variant="paragraph.large">
+          We wrote you some farewell messages.
+        </Paragraph>
+        <Button as="a" href="/aufweidersein">
+          Read Messages
+        </Button>
+      </Box>
+      <Box as="span" sx={{ margin: 'auto' }} />
+      <Box sx={{ mt: -5, height: 200, width: 220, position: 'relative' }}>
+        <Image
+          src="/images/stamp.png"
+          layout="fill"
+          objectFit="contain"
+          objectPosition="center"
+        />
+      </Box>
+    </Flex>
   )
 }
 
-export default Navbar
+export default Messages
