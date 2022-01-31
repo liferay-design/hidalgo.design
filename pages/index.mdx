@@ -28,21 +28,11 @@ export default props => <Container as="main" py={[2, 6]} {...props} />
 <Parallax translateY={[-20, 10]}>
   <Box
     sx={{
-      gridArea: 'hero-image',
+      variant: 'cards.heroPhoto',
       position: 'relative',
       height: ['60vh', 900],
       width: ['100%', 600],
       mt: [0, -6],
-      '&:after': {
-        content: '""',
-        backgroundColor: 'primary',
-        height: '80%',
-        width: '96%',
-        position: 'absolute',
-        bottom: -2,
-        right: -2,
-        zIndex: '-1',
-      },
     }}
   >
     <Image

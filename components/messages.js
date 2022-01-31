@@ -49,7 +49,7 @@ const Messages = ({ gridArea }) => {
           height: [100, 200],
           width: [110, 220],
           position: ['absolute', 'relative'],
-          right: [4, 'initial'],
+          right: [4, -5],
         }}
       >
         <Image
