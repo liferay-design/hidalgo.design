@@ -18,7 +18,7 @@ import Image from 'next/image'
 const Footer = props => {
   return (
     <Box sx={{ position: 'relative' }}>
-      <Parallax speed={-10}>
+      <Parallax speed={10} translateY={[-2000, -100]}>
         <Box
           sx={{
             right: ['-27%', 0],

@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Heading, Text, Flex, Link } from 'theme-ui'
 import Image from 'next/image'
+import { Parallax } from 'react-scroll-parallax';
 
 export default props => <Container as="main" py={[2, 6]} {...props} />
 
@@ -23,6 +24,7 @@ export default props => <Container as="main" py={[2, 6]} {...props} />
 
 </Box>
 
+<Parallax translateY={[-20, 10]}>
 <Box
   sx={{
     gridArea: 'hero-image',
@@ -50,6 +52,7 @@ export default props => <Container as="main" py={[2, 6]} {...props} />
     objectPosition="center bottom"
   />
 </Box>
+</Parallax>
 
 <Box sx={{gridArea:'about-main'}}>
 
