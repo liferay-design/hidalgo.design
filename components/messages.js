@@ -10,19 +10,24 @@ const Messages = ({ gridArea }) => {
       as="section"
       sx={{
         ...gridArea,
+        flexDirection: ['column', 'row'],
         backgroundColor: 'white',
         ml: -5,
-        // mr: -3,
+        mr: -3,
         pl: 5,
         pr: 1,
         pt: 5,
         pb: 6,
-        width: '160%',
+        width: ['124%', '160%'],
+        position: 'relative',
       }}
     >
       <Box>
-        <Heading variant="smallHeadingSecondary" sx={{ fontSize: 5, mb: 4 }}>
-          Sir, you’ve got some messages
+        <Heading
+          variant="smallHeadingSecondary"
+          sx={{ color: 'color_300', fontSize: 5, mb: 4 }}
+        >
+          Sir, you’ve got some&nbsp;messages
         </Heading>
         <Paragraph variant="paragraph.large">
           This site was a parting gift from the team at Liferay.Design.
@@ -35,7 +40,16 @@ const Messages = ({ gridArea }) => {
         </Button>
       </Box>
       <Box as="span" sx={{ margin: 'auto' }} />
-      <Box sx={{ mt: -5, height: 200, width: 220, position: 'relative' }}>
+      <Box
+        sx={{
+          order: [-1, 2],
+          mt: [-4, -5],
+          height: [100, 200],
+          width: [110, 220],
+          position: ['absolute', 'relative'],
+          right: [0, 'initial'],
+        }}
+      >
         <Image
           src="/images/stamp.png"
           layout="fill"

@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax'
 import {
   jsx,
   Container,
@@ -57,7 +57,7 @@ const Footer = props => {
                 mb: 6,
               }}
             >
-              Copyright © 2022 <br /> Juan Hidalgo
+              Copy&#8203;right © 2022 <br /> Juan &#8203;Hidalgo
             </Heading>
           </Box>
 
@@ -66,7 +66,7 @@ const Footer = props => {
               Credits
             </Heading>
 
-            <Flex sx={{ gap: 80, mt: 1 }}>
+            <Flex sx={{ gap: [4, 40], mt: 1 }}>
               <Box>
                 <Paragraph>
                   Headlines are set in{' '}
@@ -100,7 +100,7 @@ const Footer = props => {
           </Box>
 
           <Box id="contact" sx={{ gridArea: 'contact' }}>
-            <Heading as="h2" variant="smallHeadingLight">
+            <Heading as="h2" variant="smallHeadingLight" sx={{ mb: 3 }}>
               Contact
             </Heading>
 
@@ -122,7 +122,10 @@ const Footer = props => {
               href="https://twitter.com/jhidalgoreina"
               sx={{ display: 'block', variant: 'text.smallHeadingLink' }}
             >
-              Twitter <Box as="span">jhidalgoreina</Box>
+              Twitter{' '}
+              <Box as="span" sx={{ display: ['block', 'inline'] }}>
+                jhidalgoreina
+              </Box>
             </Link>
           </Box>
         </Grid>
