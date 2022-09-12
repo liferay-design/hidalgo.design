@@ -441,10 +441,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@^12.0.8":
-  version "12.0.8"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.0.8.tgz#1cddb45c36a36912bd2a5bc85ba316b1feff4291"
-  integrity sha512-nz+C3PiCd7TtBv1gV3MMVUrJXLXgwI6g92cop8ETFZHnZkvknjn4+4J71Xrgeil+5BZ9b+zQ1XGbx4xag/UUgQ==
+"@next/mdx@^12.3.0":
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.3.0.tgz#ba6a1d27f0ef9b46b00e09ca0b514787abdf5b81"
+  integrity sha512-XyzLhgsKa4lKb3dw8HFtj4MM0jilDStKtosFrkt8AX44zEwxPoJPaIvMCWNsRwq72YTzQLqh1gjepIe9zCKZwQ==
 
 "@next/react-refresh-utils@12.0.8":
   version "12.0.8"
